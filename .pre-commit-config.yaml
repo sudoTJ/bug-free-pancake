@@ -1,0 +1,8 @@
+repos:
+  -   repo: https://github.com/astral-sh/ruff-pre-commit
+      rev: v0.6.3
+      hooks:
+        -   id: ruff
+            types_or: [ python, pyi ]
+          # pre-commit install --hook-type pre-commit --hook-type pre-push
+            stages: [pre-push]
